@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
 
     [HideInInspector]
     public float currentZSpeed;
+    //[HideInInspector]
+    public float zSpeedScaler = 0f;
 
     Rigidbody rig;
     Animator anim;
@@ -30,9 +32,18 @@ public class PlayerController : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        rig.velocity = new Vector3(joy.Horizontal * xSpeed, joy.Vertical * ySpeed, currentZSpeed);
+        rig.velocity = new Vector3(joy.Horizontal * xSpeed, joy.Vertical * ySpeed, currentZSpeed * zSpeedScaler);
+        //Debug.LogError("Zspeed: "  + currentZSpeed * zSpeedScaler);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Obstacle"))
+        {
+            ZSpeedUp();
+        }
     }
 
     public void ZSpeedUp()
