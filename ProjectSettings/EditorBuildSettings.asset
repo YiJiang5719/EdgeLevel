@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/FinalWorld.unity
     guid: a1d54f20579de44f7b97f7dc399962af
   - enabled: 1
-    path: Assets/Scenes/GameCutScene.unity
+    path: Assets/Scenes/FirstWorld.unity
     guid: 37a5eaae002a7488d99f7e60af155a71
   - enabled: 1
     path: Assets/Scenes/Menu.unity
