@@ -49,6 +49,7 @@ public class PlayerController : MonoBehaviour
     public void ZSpeedUp()
     {
         if (!anim.GetCurrentAnimatorStateInfo(0).IsName("SpeedUp"))
+            Debug.Log("AnimSpeedUP Trigger is Set");
             anim.SetTrigger("SpeedUp");
     }
 }
