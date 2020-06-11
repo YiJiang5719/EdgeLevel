@@ -28,7 +28,7 @@ public class WindController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        pc.zSpeedScaler = speedScaler;
+        pc.windScaler = speedScaler;
     }
 
     void UpdateSpeedScaler()
