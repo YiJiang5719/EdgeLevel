@@ -13,10 +13,9 @@ public class SceneLoader : MonoBehaviour
 
     IEnumerator Load()
     {
+        yield return new WaitForSeconds(2f);
         var a = SceneManager.LoadSceneAsync(name);
-        a.allowSceneActivation = false;
-        yield return a.isDone;
-        yield return new WaitForSeconds(1);
-        a.allowSceneActivation = true;
+        while (!a.isDone)
+            yield return null;
     }
 }
