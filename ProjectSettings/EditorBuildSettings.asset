@@ -6,8 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/BlackHoleInside.unity
-    guid: 5c4f3502dd6b84c92b5559f7a4950746
+    path: Assets/Scenes/FirstCutScene.unity
+    guid: 275914bc28e0ba44789836ec04cb9df5
+  - enabled: 1
+    path: Assets/Scenes/FirstWorld.unity
+    guid: 37a5eaae002a7488d99f7e60af155a71
   - enabled: 1
     path: Assets/Scenes/CyberWorld.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
@@ -15,12 +18,12 @@ EditorBuildSettings:
     path: Assets/Scenes/FinalWorld.unity
     guid: a1d54f20579de44f7b97f7dc399962af
   - enabled: 1
-    path: Assets/Scenes/FirstWorld.unity
-    guid: 37a5eaae002a7488d99f7e60af155a71
-  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: be56e9385e18943819515e6b667f328a
   - enabled: 1
     path: Assets/Scenes/Preloader.unity
     guid: 962581e1ba27f459d917cd116e950693
+  - enabled: 1
+    path: Assets/Scenes/BlackHoleInside.unity
+    guid: 5c4f3502dd6b84c92b5559f7a4950746
   m_configObjects: {}
