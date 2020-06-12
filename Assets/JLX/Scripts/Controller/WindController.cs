@@ -25,16 +25,15 @@ public class WindController : MonoBehaviour
         seq.onStepComplete += UpdateSpeedScaler;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        pc.windScaler = speedScaler;
-    }
-
     void UpdateSpeedScaler()
     {
         //Debug.Log("UpdateSpeedScaler");
         var newScaler = Random.Range(minScaler, maxScaler); ;
         DOTween.To(() => speedScaler, (c) => speedScaler = c, newScaler, scalerChangeTime);
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        pc.windScaler = speedScaler;
     }
 }
