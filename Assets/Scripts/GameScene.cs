@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class GameScene : MonoBehaviour
 {
     private CanvasGroup fadeGroup;
-    private float fadeInDuration = 2;
+    public float fadeInDuration = 5f;
     private bool gameStarted;
 
     private void Start() 

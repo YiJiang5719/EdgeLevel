@@ -121,7 +121,7 @@ public class MenuScene : MonoBehaviour
             if (zoomTransition >= 1)
             {
                 //enter the level
-                SceneManager.LoadScene("GameCutScene");
+                SceneManager.LoadScene("FirstCutScene");
             }
         }     
     }
