@@ -29,7 +29,7 @@ public class ObstacleController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.LogError(other.tag);
+        //Debug.LogError(other.tag);
         if (other.CompareTag("Player"))
         {
             Raycast();
@@ -39,7 +39,7 @@ public class ObstacleController : MonoBehaviour
 
     void Raycast()
     {
-        Debug.LogError("Raycast");
+        //Debug.LogError("Raycast");
         var trail = Instantiate(TrailPrefab, transform.position, transform.rotation);
         Vector3 targetPos = nextObstacle.transform.position;
         trail.transform.DOMove(targetPos, trailLastingTime).Play();
