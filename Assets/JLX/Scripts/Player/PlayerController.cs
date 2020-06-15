@@ -10,10 +10,10 @@ public class PlayerController : MonoBehaviour
     public float zSpeed;
     public float controlRecoverTime;
 
-    float speedUpScaler = 0f;
-    float windScaler = 0f;
-    float finalSpeed = 0f;
-    bool isControl = true;
+    public float speedUpScaler = 0f;
+    public float windScaler = 0f;
+    public float finalSpeed = 0f;
+    public bool isControl = true;
 
     Rigidbody rig;
     Animator anim;
