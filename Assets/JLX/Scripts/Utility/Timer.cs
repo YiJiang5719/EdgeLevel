@@ -42,11 +42,11 @@ public class Timer : ITimer
     {
         if (IsStart && !isStop)
         {
-            time -= Time.deltaTime;
-            if (time > 0)
+            time += Time.deltaTime;
+            if (time < maxTime)
             {
                 if (OnTimerUpdate!=null)
-                    OnTimerUpdate(time, Time.deltaTime);
+                    OnTimerUpdate(time, maxTime);
             }
             else
             {
@@ -62,11 +62,11 @@ public class Timer : ITimer
     {
         if (IsStart && !isStop)
         {
-            time -= Time.fixedDeltaTime;
-            if (time > 0)
+            time += Time.fixedDeltaTime;
+            if (time < maxTime)
             {
                 if (OnTimerFixedUpdate != null)
-                    OnTimerFixedUpdate(time, Time.fixedDeltaTime);
+                    OnTimerFixedUpdate(time, maxTime);
             }
             else
             {
@@ -79,13 +79,13 @@ public class Timer : ITimer
         }
     }
 
-    public void StartTimer(float maxTime, bool loop)
+    public void StartTimer(float maxTime, bool loop=false)
     {
         if (IsStart)
             return;
         this.maxTime = maxTime;
         this.loop = loop;
-        time = maxTime;
+        time = 0;
         isStart = true;
         isStop = false;
         if (OnTimerStart != null)
