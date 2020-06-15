@@ -211,7 +211,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 20581927}
-  m_LocalRotation: {x: 0.07437623, y: -0.000000004289681, z: 3.1994551e-10, w: 0.9972303}
+  m_LocalRotation: {x: 0.07437623, y: -0.000000004289682, z: 3.1995773e-10, w: 0.9972303}
   m_LocalPosition: {x: 0, y: 6.4300003, z: -149.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -725,6 +725,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wind
       objectReference: {fileID: 0}
+    - target: {fileID: 1910294265651425182, guid: d5de2d0b60ea29e46b80d759251d952d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5de2d0b60ea29e46b80d759251d952d, type: 3}
 --- !u!1 &705507993
@@ -996,7 +1001,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.07437623, y: -0.000000004289681, z: 3.1994551e-10, w: 0.9972303}
+  m_LocalRotation: {x: 0.07437623, y: -0.000000004289682, z: 3.1995773e-10, w: 0.9972303}
   m_LocalPosition: {x: 0, y: 6.4300003, z: -149.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1682,6 +1687,18 @@ PrefabInstance:
     - target: {fileID: 405719647, guid: 2a9a55a947e1cbb48bf08a2c64e35dd2, type: 3}
       propertyPath: windScaler
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 405719647, guid: 2a9a55a947e1cbb48bf08a2c64e35dd2, type: 3}
+      propertyPath: explosionScaler
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 405719647, guid: 2a9a55a947e1cbb48bf08a2c64e35dd2, type: 3}
+      propertyPath: controlRecoverTime
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 405719650, guid: 2a9a55a947e1cbb48bf08a2c64e35dd2, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1559132937979514933, guid: 2a9a55a947e1cbb48bf08a2c64e35dd2,
         type: 3}

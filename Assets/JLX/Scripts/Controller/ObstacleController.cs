@@ -33,6 +33,7 @@ public class ObstacleController : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             Raycast();
+            other.GetComponent<PlayerController>().ZSpeedUp();
             Destroy(gameObject);
         }
     }

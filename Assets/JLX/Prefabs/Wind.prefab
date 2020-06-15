@@ -44,11 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21860544852f0404da811f293a72f6c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxScaler: 1
-  minScaler: 0.5
-  scalerChangeTime: 1
-  scalerUpdateTime: 1
-  speedScaler: 1
+  windSpeedScaler: 0.6
+  cdTime: 3
 --- !u!65 &838217652247286938
 BoxCollider:
   m_ObjectHideFlags: 0

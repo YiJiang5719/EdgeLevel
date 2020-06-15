@@ -128,9 +128,10 @@ public class Timer : ITimer
         }
     }
 
-    public void RestartOnTimerEnd()
+    public void Reset()
     {
         isStart = false;
+        isStop = false;
     }
 }
 
