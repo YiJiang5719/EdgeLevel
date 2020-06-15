@@ -10,10 +10,9 @@ public class PlayerController : MonoBehaviour
     public float zSpeed;
     public float controlRecoverTime;
 
-    float currentZSpeed;
-    public float speedUpScaler = 0f;
-    public float windScaler = 0f;
-    public float finalSpeed = 0f;
+    float speedUpScaler = 0f;
+    float windScaler = 0f;
+    float finalSpeed = 0f;
     bool isControl = true;
 
     Rigidbody rig;
@@ -32,7 +31,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rig.velocity = new Vector3(0, 0, zSpeed);
-        currentZSpeed = zSpeed;
         controlRecoverTimer = new Timer();
         controlRecoverTimer.OnTimerEnd += () => { /*Debug.LogError("TimerEnd"); */isControl = true; };
     }
@@ -48,7 +46,7 @@ public class PlayerController : MonoBehaviour
         if (!isControl)
             return;
         entity.transform.rotation = Quaternion.Euler(0, 0, joy.Horizontal * 45);
-        finalSpeed = currentZSpeed * speedUpScaler * windScaler;
+        finalSpeed = zSpeed * speedUpScaler * windScaler;
         rig.velocity = new Vector3(joy.Horizontal * xSpeed, joy.Vertical * ySpeed, finalSpeed);
     }
 
