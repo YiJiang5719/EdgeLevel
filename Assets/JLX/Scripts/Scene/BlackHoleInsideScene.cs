@@ -7,10 +7,12 @@ public class BlackHoleInsideScene : MonoBehaviour
 {
     public float bossAppearTime = 2f;
     public float winDistance = 100f;
+    public int maxCounter = 3;
 
     Timer bossAppearTimer = new Timer();
     BossController bc;
     PlayerController pc;
+    int counter = 0;
 
     // Start is called before the first frame update
     void Awake()
@@ -28,8 +30,6 @@ public class BlackHoleInsideScene : MonoBehaviour
     void Update()
     {
         bossAppearTimer.Update();
-        if (IsWin())
-            AfterWin();
     }
 
     public void ShowBoss()
@@ -43,10 +43,11 @@ public class BlackHoleInsideScene : MonoBehaviour
         bc.gameObject.SetActive(false);
     }
 
-    public bool IsWin()
+    public void AddCounter()
     {
-        var dis = (pc.transform.position - bc.transform.position).magnitude;
-        return dis > winDistance;
+        counter++;
+        if (counter >= maxCounter)
+            AfterWin();
     }
 
     public void AfterWin()
@@ -54,3 +55,55 @@ public class BlackHoleInsideScene : MonoBehaviour
         SceneManager.LoadScene("FinalWorld");
     }
 }
+
+//public class BlackHoleInsideScene : MonoBehaviour
+//{
+//    public float bossAppearTime = 2f;
+//    public float winDistance = 100f;
+
+//    Timer bossAppearTimer = new Timer();
+//    BossController bc;
+//    PlayerController pc;
+
+//    // Start is called before the first frame update
+//    void Awake()
+//    {
+//        bc = FindObjectOfType<BossController>();
+//        pc = FindObjectOfType<PlayerController>();
+
+//        bossAppearTimer.OnTimerStart += HideBoss;
+//        bossAppearTimer.OnTimerEnd += ShowBoss;
+
+//        bossAppearTimer.StartTimer(bossAppearTime, false);
+//    }
+
+//    // Update is called once per frame
+//    void Update()
+//    {
+//        bossAppearTimer.Update();
+//        if (IsWin())
+//            AfterWin();
+//    }
+
+//    public void ShowBoss()
+//    {
+//        //Debug.Log("ShowBoss");
+//        bc.gameObject.SetActive(true);
+//    }
+//    public void HideBoss()
+//    {
+//        //Debug.Log("HideBoss");
+//        bc.gameObject.SetActive(false);
+//    }
+
+//    public bool IsWin()
+//    {
+//        var dis = (pc.transform.position - bc.transform.position).magnitude;
+//        return dis > winDistance;
+//    }
+
+//    public void AfterWin()
+//    {
+//        SceneManager.LoadScene("FinalWorld");
+//    }
+//}

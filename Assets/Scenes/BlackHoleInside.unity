@@ -1034,6 +1034,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bossAppearTime: 2
   winDistance: 100
+  maxCounter: 3
 --- !u!4 &1770774663
 Transform:
   m_ObjectHideFlags: 0
@@ -1121,10 +1122,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1564884280217900838, guid: 869a47b1a2a42d14d8fd8e06870fb0c9,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1636816135046819415, guid: 869a47b1a2a42d14d8fd8e06870fb0c9,
         type: 3}
       propertyPath: m_Constraints
-      value: 116
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 1636816135046819415, guid: 869a47b1a2a42d14d8fd8e06870fb0c9,
+        type: 3}
+      propertyPath: m_Mass
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 2972381756933481594, guid: 869a47b1a2a42d14d8fd8e06870fb0c9,
         type: 3}
@@ -1211,5 +1222,21 @@ PrefabInstance:
       propertyPath: speed
       value: 30
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3213704978483148376, guid: 869a47b1a2a42d14d8fd8e06870fb0c9,
+        type: 3}
+      propertyPath: zRushOffset.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3213704978483148376, guid: 869a47b1a2a42d14d8fd8e06870fb0c9,
+        type: 3}
+      propertyPath: skillCDTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8077781197322830955, guid: 869a47b1a2a42d14d8fd8e06870fb0c9,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 317434326065554773, guid: 869a47b1a2a42d14d8fd8e06870fb0c9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 869a47b1a2a42d14d8fd8e06870fb0c9, type: 3}
