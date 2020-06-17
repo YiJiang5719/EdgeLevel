@@ -30,7 +30,7 @@ public class WindController : MonoBehaviour
         if (!cdTimer.IsStart)
         {
             //Debug.Log("OnTriggerEnter cdTimer");
-            pc.Hit(transform.position);
+            pc.WindHit(transform.position);
             cdTimer.StartTimer(cdTime, false);
         }
     }

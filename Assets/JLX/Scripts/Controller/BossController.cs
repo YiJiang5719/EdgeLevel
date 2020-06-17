@@ -100,10 +100,17 @@ public class BossController : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Player"))
+        switch (state)
         {
-            Debug.Log("OnCollisionEnter");
-            manager.AddCounter();
+            case State.Rush:
+                if (collision.gameObject.CompareTag("Player"))
+                {
+                    Debug.Log("OnCollisionEnter");
+                    manager.AddCounter();
+                    pc.BossHit(collision.contacts[0].point);
+                    state = State.Idle;
+                }
+                break;
         }
     }
 
