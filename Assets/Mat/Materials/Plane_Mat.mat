@@ -104,8 +104,8 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_38D49AA2: {r: 0.027729679, g: 0.93171716, b: 1.0592737, a: 0}
-    - Vector2_7BA7832C: {r: 120, g: 80, b: 0, a: 0}
+    - Color_38D49AA2: {r: 0, g: 0.46031266, b: 1.0592737, a: 0}
+    - Vector2_7BA7832C: {r: 200, g: 80, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}

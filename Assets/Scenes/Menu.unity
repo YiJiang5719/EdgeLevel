@@ -345,7 +345,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1
+  m_Text: "\u58F9"
 --- !u!222 &129725220
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1317,12 +1317,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 448086822}
-  m_LocalRotation: {x: -0.18632837, y: -0.002822943, z: -0.36476052, w: 0.9122629}
-  m_LocalPosition: {x: -12, y: 10, z: 12}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.16091439, y: 0.010872737, z: -0.3525725, w: 0.9217815}
+  m_LocalPosition: {x: -5.4742227, y: 5.1740723, z: 14.9983015}
+  m_LocalScale: {x: 0.6666666, y: 0.6666666, z: 0.6666666}
   m_Children: []
-  m_Father: {fileID: 740280731}
-  m_RootOrder: 2
+  m_Father: {fileID: 963194228}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -20, y: 8, z: -45}
 --- !u!65 &448086824
 BoxCollider:
@@ -2372,7 +2372,6 @@ Transform:
   m_Children:
   - {fileID: 986066067}
   - {fileID: 2013574678}
-  - {fileID: 448086823}
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2444,7 +2443,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 2
+  m_Text: "\u672A"
 --- !u!222 &768972394
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3025,7 +3024,8 @@ Transform:
   m_LocalRotation: {x: -0.39362535, y: -0.11555112, z: 0.22725973, w: 0.88321006}
   m_LocalPosition: {x: 0, y: -5, z: -5}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 448086823}
   m_Father: {fileID: 986066067}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -40, y: -30, z: 40}
