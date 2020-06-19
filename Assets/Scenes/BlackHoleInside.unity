@@ -1369,12 +1369,12 @@ PrefabInstance:
     - target: {fileID: 3213704978483148376, guid: 869a47b1a2a42d14d8fd8e06870fb0c9,
         type: 3}
       propertyPath: skillCDTime
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3213704978483148376, guid: 869a47b1a2a42d14d8fd8e06870fb0c9,
         type: 3}
       propertyPath: startPosOffset.z
-      value: 20
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3213704978483148376, guid: 869a47b1a2a42d14d8fd8e06870fb0c9,
         type: 3}
