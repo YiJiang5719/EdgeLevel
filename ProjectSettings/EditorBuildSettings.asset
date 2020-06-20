@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BlackHoleInside.unity
     guid: 5c4f3502dd6b84c92b5559f7a4950746
+  - enabled: 1
+    path: Assets/Scenes/FinalCutScene.unity
+    guid: 367c66f2a925a4283892a155c699a69a
   m_configObjects: {}
