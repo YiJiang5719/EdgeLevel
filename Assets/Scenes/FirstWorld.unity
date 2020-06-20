@@ -2326,10 +2326,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1533117882}
     m_Modifications:
-    - target: {fileID: 662144867, guid: 8e28427fbf7eebf42ac5c8968530a6f4, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5147238651797176503, guid: 8e28427fbf7eebf42ac5c8968530a6f4,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -2444,11 +2440,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ControllCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 5147238652044544799, guid: 8e28427fbf7eebf42ac5c8968530a6f4,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e28427fbf7eebf42ac5c8968530a6f4, type: 3}
@@ -3659,8 +3650,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: -0.074376225, y: 0.0000000029075844, z: 0.000000018211116,
-    w: -0.9972303}
+  m_LocalRotation: {x: -0.07437623, y: -0.000000005671778, z: 0.000000018850988, w: -0.9972303}
   m_LocalPosition: {x: 0, y: 68, z: -2190}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -4067,8 +4057,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1139840489}
-  m_LocalRotation: {x: -0.074376225, y: 0.0000000029075844, z: 0.000000018211116,
-    w: -0.9972303}
+  m_LocalRotation: {x: -0.07437623, y: -0.000000005671778, z: 0.000000018850988, w: -0.9972303}
   m_LocalPosition: {x: 0, y: 68, z: -2190}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
