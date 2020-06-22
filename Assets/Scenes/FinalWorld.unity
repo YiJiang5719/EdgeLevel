@@ -788,6 +788,8 @@ PlayableDirector:
     value: {fileID: 25087481}
   - key: {fileID: 7614015887910374804, guid: 7e8c4711af02a4f1bb9fef21abf87a15, type: 2}
     value: {fileID: 765280428}
+  - key: {fileID: -7915956989538547580, guid: 7e8c4711af02a4f1bb9fef21abf87a15, type: 2}
+    value: {fileID: 2808392556384375969}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1354272135
@@ -2700,6 +2702,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7413247929198075326}
+  - component: {fileID: 2808392556384375969}
   m_Layer: 0
   m_Name: MissBoy
   m_TagString: Untagged
@@ -2707,6 +2710,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!95 &2808392556384375969
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2808392556384375968}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!4 &2817149875328696989
 Transform:
   m_ObjectHideFlags: 0
