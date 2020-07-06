@@ -8,6 +8,7 @@ public class SceneLoader : MonoBehaviour
     public string name;
     public void LoadSceneAsync()
     {
+        SoundManager.instance.MirrorBreak();
         StartCoroutine(Load());
     }
 

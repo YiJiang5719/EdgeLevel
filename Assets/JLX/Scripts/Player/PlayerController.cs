@@ -97,6 +97,7 @@ public class PlayerController : MonoBehaviour
                 if (!anim.GetCurrentAnimatorStateInfo(0).IsName("SpeedUp"))
                 {
                     //Debug.Log("AnimSpeedUP Trigger is Set");
+                    SoundManager.instance.PlayerSpeedUp();
                     anim.SetTrigger("SpeedUp");
                 }
                 break;
